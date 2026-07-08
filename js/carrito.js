@@ -7,11 +7,9 @@ const renderizarCarrito = () => {
   actualizarContador(carrito);
 
   const contenedor = document.getElementById("contenedor-carrito");
-  const divAcciones = document.getElementById("acciones-carrito");
   const resumen = document.getElementById("resumen-carrito");
 
   contenedor.innerHTML = "";
-  divAcciones.innerHTML = "";
   resumen.innerHTML = "";
 
   if (!carrito.length) {
@@ -60,13 +58,18 @@ const renderizarCarrito = () => {
   );
   const tituloTotal = document.createElement("h2");
   tituloTotal.classList.add("titulo-total");
-  tituloTotal.textContent = "Total de la compra";
+  tituloTotal.textContent = "Resumen de la compra";
+
+  const cantidadProductos = document.createElement("p");
+  cantidadProductos.classList.add("cantidad-productos");
+  cantidadProductos.textContent = `Productos: ${carrito.length}`;
 
   const totalCompra = document.createElement("p");
   totalCompra.classList.add("total-compra");
   totalCompra.textContent = `$${total.toLocaleString("es-AR")}`;
 
   resumen.appendChild(tituloTotal);
+  resumen.appendChild(cantidadProductos);
   resumen.appendChild(totalCompra);
 
   const btnVaciar = document.createElement("button");
@@ -83,13 +86,20 @@ const renderizarCarrito = () => {
   btnFinalizar.textContent = "Finalizar compra";
 
   btnFinalizar.addEventListener("click", () => {
-    alert("¡Gracias por tu compra! 🐶🐱");
+    alert(
+      "¡Gracias por tu compra! 🐶🐱\n\nTu pedido fue registrado correctamente.🐾",
+    );
     vaciarCarrito();
     renderizarCarrito();
   });
 
-  divAcciones.appendChild(btnVaciar);
-  divAcciones.appendChild(btnFinalizar);
+  const acciones = document.createElement("div");
+  acciones.classList.add("acciones-carrito");
+
+  acciones.appendChild(btnVaciar);
+  acciones.appendChild(btnFinalizar);
+
+  resumen.appendChild(acciones);
 };
 
 document.addEventListener("DOMContentLoaded", () => {

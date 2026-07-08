@@ -228,6 +228,7 @@ footer .footer-list {
   max-width: 60rem;
   margin: 3rem auto;
   padding: 2.5rem;
+  background-color: hsl(261, 79%, 77%);
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   text-align: center;
@@ -247,9 +248,26 @@ footer .footer-list {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 .acciones-carrito button {
-  width: 22rem;
+  max-width: 22rem;
+}
+.titulo-total {
+  color: #3523aa;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.cantidad-productos {
+  font-size: 2rem;
+  color: #4d3d61;
+  margin-bottom: 1rem;
+}
+.total-compra {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2a1e35;
+  margin-bottom: 2rem;
 }
 
 /* -------------------------------------------------------------------------- */
