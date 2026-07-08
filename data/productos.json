@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "nombre": "Cepillo a vapor",
+    "foto": "img/cepillo-vapor.webp",
+    "precio": 15000
+  },
+  {
+    "id": "2",
+    "nombre": "Cama moises",
+    "foto": "img/cama-moises.webp",
+    "precio": 25000
+  },
+  {
+    "id": "3",
+    "nombre": "Guante removedor de pelos",
+    "foto": "img/manopla-pelos.webp",
+    "precio": 85000
+  },
+  {
+    "id": "4",
+    "nombre": "Funda cubre asientos",
+    "foto": "img/funda-cubre-asientos.webp",
+    "precio": 16500
+  }
+]
