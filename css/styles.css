@@ -233,16 +233,6 @@ footer .footer-list {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   text-align: center;
 }
-.resumen-carrito h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-.total-compra {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
 .acciones-carrito {
   display: flex;
   justify-content: center;
@@ -251,7 +241,7 @@ footer .footer-list {
   margin-top: 2rem;
 }
 .acciones-carrito button {
-  max-width: 22rem;
+  width: 22rem;
 }
 .titulo-total {
   color: #3523aa;

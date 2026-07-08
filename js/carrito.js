@@ -26,9 +26,11 @@ const renderizarCarrito = () => {
 
     const img = document.createElement("img");
     img.src = `../${producto.foto}`;
+    img.classList.add("imagen-producto");
     img.alt = producto.nombre;
 
     const titulo = document.createElement("h3");
+    titulo.classList.add("titulo-producto");
     titulo.textContent = producto.nombre;
 
     const precio = document.createElement("p");
