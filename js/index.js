@@ -20,6 +20,7 @@ const renderizarProductos = () => {
         img.alt = producto.nombre;
 
         const titulo = document.createElement("h3");
+        titulo.classList.add("titulo-producto");
         titulo.textContent = producto.nombre;
 
         const descripcion = document.createElement("p");

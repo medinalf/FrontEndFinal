@@ -44,21 +44,6 @@ h2 {
   text-align: center;
   margin: 2rem 0;
 }
-.btn {
-  border: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  width: 85%;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.btn:hover {
-  background-color: #e4a010;
-  transform: translateY(-3px);
-}
 header,
 footer {
   background: rgb(111, 75, 153);
@@ -106,7 +91,22 @@ footer .footer-list {
   width: 5rem;
   padding: 0.5rem;
 }
-
+/* --------------------------------- botones -------------------------------- */
+.btn {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 85%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #e4a010;
+  transform: translateY(-3px);
+}
 /* -------------------------------------------------------------------------- */ /* COLORES */ /* -------------------------------------------------------------------------- */
 .bg-primary {
   background-color: #6e5a8e;
@@ -137,6 +137,7 @@ footer .footer-list {
   flex-wrap: wrap;
   gap: 2rem;
 }
+/* -------------------------------- Tarjetas -------------------------------- */
 .tarjeta {
   /*Layout*/
   display: flex;
@@ -154,7 +155,7 @@ footer .footer-list {
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.tarjeta h3 {
+.titulo.producto {
   font-size: 2.3rem;
   text-align: center;
   padding: 1rem 2rem 0;
