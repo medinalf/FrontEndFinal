@@ -155,6 +155,12 @@ footer .footer-list {
   transform: translateY(-8px);
   box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px;
 }
+.tarjeta h3 {
+  min-height: 6rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
 .tarjeta img {
   width: 100%;
   height: 40rem;
@@ -163,6 +169,7 @@ footer .footer-list {
 .precio {
   font-size: 2.4rem;
   font-weight: bold;
+  margin-top: auto;
   color: #2a1e35;
 }
 

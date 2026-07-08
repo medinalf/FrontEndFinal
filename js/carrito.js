@@ -36,7 +36,7 @@ const renderizarCarrito = () => {
     precio.textContent = `$${producto.precio.toLocaleString("es-AR")}`;
 
     const btnEliminar = document.createElement("button");
-    btnEliminar.classList.add("btn", "bg-danger", "text-white");
+    btnEliminar.classList.add("btn", "bg-secondary", "text-dark");
     btnEliminar.textContent = "Eliminar producto";
 
     btnEliminar.addEventListener("click", () => {
@@ -53,7 +53,7 @@ const renderizarCarrito = () => {
   });
 
   const btnVaciar = document.createElement("button");
-  btnVaciar.classList.add("btn", "bg-danger", "text-white");
+  btnVaciar.classList.add("btn", "bg-secondary", "text-dark");
   btnVaciar.textContent = "Vaciar carrito";
 
   btnVaciar.addEventListener("click", () => {
