@@ -8,9 +8,11 @@ const renderizarCarrito = () => {
 
   const contenedor = document.getElementById("contenedor-carrito");
   const divAcciones = document.getElementById("acciones-carrito");
+  const resumen = document.getElementById("resumen-carrito");
 
   contenedor.innerHTML = "";
   divAcciones.innerHTML = "";
+  resumen.innerHTML = "";
 
   if (!carrito.length) {
     const mensaje = document.createElement("p");
@@ -51,6 +53,21 @@ const renderizarCarrito = () => {
 
     contenedor.appendChild(tarjeta);
   });
+  //Calculo el total del carrito
+  const total = carrito.reduce(
+    (acumulador, producto) => acumulador + producto.precio,
+    0,
+  );
+  const tituloTotal = document.createElement("h2");
+  tituloTotal.classList.add("titulo-total");
+  tituloTotal.textContent = "Total de la compra";
+
+  const totalCompra = document.createElement("p");
+  totalCompra.classList.add("total-compra");
+  totalCompra.textContent = `$${total.toLocaleString("es-AR")}`;
+
+  resumen.appendChild(tituloTotal);
+  resumen.appendChild(totalCompra);
 
   const btnVaciar = document.createElement("button");
   btnVaciar.classList.add("btn", "bg-secondary", "text-dark");
@@ -61,7 +78,18 @@ const renderizarCarrito = () => {
     renderizarCarrito();
   });
 
+  const btnFinalizar = document.createElement("button");
+  btnFinalizar.classList.add("btn", "bg-primary", "text-light");
+  btnFinalizar.textContent = "Finalizar compra";
+
+  btnFinalizar.addEventListener("click", () => {
+    alert("¡Gracias por tu compra! 🐶🐱");
+    vaciarCarrito();
+    renderizarCarrito();
+  });
+
   divAcciones.appendChild(btnVaciar);
+  divAcciones.appendChild(btnFinalizar);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
