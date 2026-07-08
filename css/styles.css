@@ -221,6 +221,38 @@ footer .footer-list {
   justify-content: center;
 }
 /* -------------------------------------------------------------------------- */
+/*                                   CARRITO                                  */
+/* -------------------------------------------------------------------------- */
+.resumen-carrito {
+  width: 100%;
+  max-width: 60rem;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  text-align: center;
+}
+.resumen-carrito h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.total-compra {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.acciones-carrito {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.acciones-carrito button {
+  width: 22rem;
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                MEDIA QUERIES                               */
 /* -------------------------------------------------------------------------- */
 @media (max-width: 600px) {
