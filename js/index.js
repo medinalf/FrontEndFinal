@@ -23,7 +23,8 @@ const renderizarProductos = () => {
         titulo.textContent = producto.nombre;
 
         const precio = document.createElement("p");
-        precio.textContent = `$${producto.precio}`;
+        precio.classList.add("precio");
+        precio.textContent = `$${producto.precio.toLocaleString("es-AR")}`;
 
         const boton = document.createElement("button");
         boton.classList.add("btn", "bg-secondary", "text-dark");
