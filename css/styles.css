@@ -34,6 +34,7 @@ h1 {
   font-weight: 900;
   line-height: 1.3;
   margin: 2rem 0;
+  text-align: center;
 }
 h2 {
   color: #3523aa;
@@ -49,9 +50,9 @@ h2 {
   font-weight: bold;
   padding: 1.5rem;
   border-radius: 1rem;
-  width: 80%;
+  width: 85%;
   cursor: pointer;
-  trasnsition: 0.3s;
+  transition: 0.3s;
 }
 .btn:hover {
   background-color: #e4a010;
@@ -92,7 +93,6 @@ footer .footer-list {
   display: flex;
   gap: 2rem;
 }
-
 .footer-list li {
   padding: 0.5rem;
   margin-right: 2rem;
@@ -101,10 +101,7 @@ footer .footer-list {
 .footer-list img {
   width: 5rem;
   padding: 0.5rem;
-}
-/* -------------------------------------------------------------------------- */
-/*                                   COLORES                                  */
-/* -------------------------------------------------------------------------- */
+} /* -------------------------------------------------------------------------- */ /* COLORES */ /* -------------------------------------------------------------------------- */
 .bg-primary {
   background-color: #6e5a8e;
 }
@@ -119,10 +116,7 @@ footer .footer-list {
 }
 .text-secondary {
   color: #e4a010;
-}
-/* -------------------------------------------------------------------------- */
-/*                                    HOME                                    */
-/* -------------------------------------------------------------------------- */
+} /* -------------------------------------------------------------------------- */ /* HOME */ /* -------------------------------------------------------------------------- */
 .parrafo {
   width: 80%;
   text-align: center;
@@ -137,18 +131,20 @@ footer .footer-list {
   gap: 2rem;
 }
 .tarjeta {
-  margin: 1rem;
-  background: hsl(261, 79%, 77%);
-  color: #3523aa;
-  width: 40rem;
-  padding-bottom: 2rem;
-  border-radius: 1rem;
-  overflow: hidden;
-
+  /*Layout*/
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  /*Tamaño*/
+  width: 40rem;
+  padding-bottom: 2rem;
+  margin: 1rem;
+  /*Apariencia*/
+  background: hsl(261, 79%, 77%);
+  color: #3523aa;
+  border-radius: 1rem;
+  overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .tarjeta:hover {
@@ -156,10 +152,20 @@ footer .footer-list {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px;
 }
 .tarjeta h3 {
-  min-height: 6rem;
+  font-size: 2.3rem;
   text-align: center;
+  padding: 1rem 2rem 0;
+  color: #3523aa;
+  min-height: 6rem;
   display: flex;
   align-items: center;
+}
+.descripcion {
+  padding: 0 2rem;
+  text-align: center;
+  color: #4d3d61;
+  line-height: 1.5;
+  flex-grow: 1;
 }
 .tarjeta img {
   width: 100%;
@@ -169,13 +175,8 @@ footer .footer-list {
 .precio {
   font-size: 2.4rem;
   font-weight: bold;
-  margin-top: auto;
   color: #2a1e35;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                  CONTACTO                                  */
-/* -------------------------------------------------------------------------- */
+} /* -------------------------------------------------------------------------- */ /* CONTACTO */ /* -------------------------------------------------------------------------- */
 .titulo-contacto {
   margin: 2rem 0;
 }
@@ -220,5 +221,15 @@ footer .footer-list {
   .header-nav ul li a,
   .div-logo {
     margin: 0;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .parrafo {
+    width: 100%;
+    font-size: 1.8rem;
   }
 }
