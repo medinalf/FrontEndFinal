@@ -33,7 +33,6 @@ header img {
   transition: color 0.3s;
   display: inline-block;
   padding: 1rem;
-  margin-right: 2rem;
 }
 .header-nav ul li a:hover {
   color: #f5be4f;
@@ -82,7 +81,6 @@ footer .footer-list {
 }
 .footer-list li {
   padding: 0.5rem;
-  margin-right: 2rem;
   cursor: pointer;
 }
 .footer-list img {
@@ -188,9 +186,6 @@ footer .footer-list {
 /* -------------------------------------------------------------------------- */
 /*                                  CONTACTO                                  */
 /* -------------------------------------------------------------------------- */
-.titulo-contacto {
-  margin: 2rem 0;
-}
 .form-contacto {
   background-color: hsl(261, 79%, 77%);
   width: 100%;
@@ -211,6 +206,8 @@ footer .footer-list {
   border: none;
   background-color: transparent;
   border-bottom: solid 2px #2a1e35;
+  padding: 0.5rem;
+  font: inherit;
 }
 .grupo-input textarea {
   min-height: 1rem;
