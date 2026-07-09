@@ -5,7 +5,7 @@ export const actualizarContador = (carrito) => {
     contador.textContent = carrito.length;
   }
 };
-//Esta funcion les puede servir para cuando agreguen librerias
+//Esta funcion les puede servir para cuando agreguen librerias, (no agregue Sweet Alert)
 export const mostrarMensaje = (mensaje) => {
   alert(mensaje);
 };
