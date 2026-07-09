@@ -1,6 +1,6 @@
 import { obtenerCarrito } from "./storage.js";
 import { eliminarDelCarrito, vaciarCarrito } from "./funcionesCarrito.js";
-import { actualizarContador } from "./ui.js";
+import { actualizarContador, mostrarMensaje } from "./ui.js";
 
 const renderizarCarrito = () => {
   const carrito = obtenerCarrito();
@@ -88,7 +88,7 @@ const renderizarCarrito = () => {
   btnFinalizar.textContent = "Finalizar compra";
 
   btnFinalizar.addEventListener("click", () => {
-    alert(
+    mostrarMensaje(
       "¡Gracias por tu compra! 🐶🐱\n\nTu pedido fue registrado correctamente.🐾",
     );
     vaciarCarrito();
