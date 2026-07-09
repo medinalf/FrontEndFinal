@@ -225,6 +225,7 @@ footer .footer-list {
 /* -------------------------------------------------------------------------- */
 .carrito-icono {
   font-weight: bold;
+  display: inline-flex;
   gap: 0.5rem;
 }
 .resumen-carrito {
