@@ -278,7 +278,6 @@ footer .footer-list {
   footer {
     flex-direction: column;
   }
-  .logo,
   .header-nav ul li a,
   .div-logo {
     margin: 0;
